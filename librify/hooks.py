@@ -4,7 +4,7 @@ app_publisher = "admin"
 app_description = "Here all Kind of Books are stored here and for sell also"
 app_email = "admin@gmail.com"
 app_license = "mit"
-
+#comment
 # Apps
 # ------------------
 
