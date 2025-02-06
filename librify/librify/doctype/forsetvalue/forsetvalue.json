@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-04 11:19:07.544202",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fname",
+  "mname",
+  "lname",
+  "fullname"
+ ],
+ "fields": [
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "label": "name"
+  },
+  {
+   "fieldname": "mname",
+   "fieldtype": "Data",
+   "label": "Middle_name"
+  },
+  {
+   "fieldname": "lname",
+   "fieldtype": "Data",
+   "label": "Last_name"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "label": "Full_name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-04 11:21:12.482764",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Forsetvalue",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
