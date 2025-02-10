@@ -12,7 +12,12 @@
   "fullname",
   "image",
   "enable",
-  "childtable"
+  "childtable",
+  "dob",
+  "cname",
+  "address",
+  "contact",
+  "ddate"
  ],
  "fields": [
   {
@@ -51,11 +56,36 @@
    "fieldtype": "Table",
    "label": "family members",
    "options": "forctable"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fieldname": "cname",
+   "fieldtype": "Data",
+   "label": "Comapny name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Long Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Int",
+   "label": "contact"
+  },
+  {
+   "fieldname": "ddate",
+   "fieldtype": "Date",
+   "label": "Deliverydate"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 17:08:03.910808",
+ "modified": "2025-02-06 11:57:29.703056",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "server side scripting",
