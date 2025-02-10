@@ -2,37 +2,46 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "Prompt",
- "creation": "2025-02-04 10:41:20.004076",
+ "creation": "2025-02-10 15:48:40.738160",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "fname",
-  "mname",
-  "lname"
+  "sname",
+  "colors",
+  "age"
  ],
  "fields": [
   {
    "fieldname": "fname",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "First_name"
   },
   {
-   "fieldname": "mname",
+   "fieldname": "sname",
    "fieldtype": "Data",
-   "label": "Middle_name"
+   "label": "Second_name"
   },
   {
-   "fieldname": "lname",
-   "fieldtype": "Data",
-   "label": "Last_name"
+   "fieldname": "colors",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "colors",
+   "options": "Green\nBlue\nWhite\nRed\nYellow"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-10 15:04:01.237588",
+ "modified": "2025-02-10 17:13:56.956742",
  "modified_by": "Administrator",
  "module": "Librify",
- "name": "forgetvalue",
+ "name": "Person",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -47,19 +56,18 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Fleet Manager",
-   "share": 1,
-   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Green"
+  },
+  {
+   "color": "Pink",
+   "title": "Yellow"
+  }
+ ]
 }

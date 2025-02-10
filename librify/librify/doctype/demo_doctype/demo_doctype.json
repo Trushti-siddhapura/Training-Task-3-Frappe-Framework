@@ -8,7 +8,11 @@
  "field_order": [
   "data",
   "textdata",
-  "childtable"
+  "childtable",
+  "colors",
+  "aftercolor",
+  "image",
+  "texteditor"
  ],
  "fields": [
   {
@@ -30,11 +34,48 @@
    "fieldtype": "Table",
    "label": "Childtable",
    "options": "forctable"
+  },
+  {
+   "fieldname": "colors",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "select the colors",
+   "options": "Option 1\nOption 2\nOption 3",
+   "placeholder": "Enter the color that you like",
+   "sort_options": 1
+  },
+  {
+   "depends_on": "eval:doc.colors===\"Option 1\"",
+   "fieldname": "aftercolor",
+   "fieldtype": "Select",
+   "label": "After the select Color",
+   "options": "black\nblue\nyellow\nbrown",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "texteditor",
+   "fieldtype": "Text Editor",
+   "label": "Text-Editor"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-02-03 10:49:24.539291",
+ "links": [
+  {
+   "link_doctype": "single",
+   "link_fieldname": "color"
+  },
+  {
+   "link_doctype": "single",
+   "link_fieldname": "data"
+  }
+ ],
+ "modified": "2025-02-10 12:09:54.691347",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "Demo Doctype",
@@ -56,5 +97,18 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Pink",
+   "title": "Option 1"
+  },
+  {
+   "color": "Green",
+   "title": "Select Green"
+  },
+  {
+   "color": "Red",
+   "title": "Select Blue"
+  }
+ ]
 }

@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "label1",
-  "label2"
+  "label2",
+  "enable"
  ],
  "fields": [
   {
@@ -20,11 +21,18 @@
    "fieldname": "label2",
    "fieldtype": "Data",
    "label": "label2"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable",
+   "permlevel": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-03 10:51:03.850895",
+ "modified": "2025-02-10 15:31:09.998033",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "naming series docs",
@@ -42,6 +50,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1
   }
  ],
  "sort_field": "modified",

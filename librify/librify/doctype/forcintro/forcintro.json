@@ -7,7 +7,8 @@
  "field_order": [
   "fname",
   "age",
-  "enable"
+  "enable",
+  "image"
  ],
  "fields": [
   {
@@ -25,11 +26,17 @@
    "fieldname": "enable",
    "fieldtype": "Check",
    "label": "enable"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 11:10:06.676155",
+ "modified": "2025-02-10 15:13:52.780059",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "forcintro",
@@ -44,6 +51,16 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
    "share": 1,
    "write": 1
   }

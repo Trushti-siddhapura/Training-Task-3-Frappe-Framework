@@ -5,18 +5,32 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "data"
+  "data",
+  "color"
  ],
  "fields": [
   {
    "fieldname": "data",
    "fieldtype": "Text",
    "label": "data"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "select The color",
+   "options": "Option 1\nOption 2\nOption 3",
+   "sort_options": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-02-03 10:51:23.132458",
+ "links": [
+  {
+   "link_doctype": "Demo Doctype",
+   "link_fieldname": "data"
+  }
+ ],
+ "modified": "2025-02-10 15:26:53.749761",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "single",
@@ -33,9 +47,34 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Purple",
+   "title": "Option 1"
+  }
+ ]
 }
