@@ -11,3 +11,4 @@ frappe.ui.form.on("forctable",{
         frappe.msgprint("Hello This is my child table event")
     }
 })
+ 

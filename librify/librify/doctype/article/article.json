@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2025-02-11 10:10:28.599246",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "route",
+  "published",
+  "title",
+  "status",
+  "author",
+  "image",
+  "publisher",
+  "isbn",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Available\nIssued"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "description"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "publishername"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Display Image"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Int",
+   "label": "isbn"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2025-02-11 17:04:31.814617",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Article",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "articles",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -10,8 +10,8 @@ class forgetvalueserverside(Document):
 	def validate(self):
 		frappe.msgprint(_("hello My full name is: '{0}'").format(self.fname + " " + self.sname + " " + self.tname))
 
-	def after_save(self):
-		frappe.msgprit(_("Hello this is my frappe page"))
+	# def after_save(self):
+	# 	frappe.msgprit(_("Hello this is my frappe page"))
 
 
 	def validate(self):

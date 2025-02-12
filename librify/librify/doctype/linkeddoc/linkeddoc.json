@@ -1,31 +1,43 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-03 11:56:09.972609",
+ "creation": "2025-02-11 12:42:05.764577",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "attach",
-  "age"
+  "age",
+  "address",
+  "map"
  ],
  "fields": [
   {
-   "fieldname": "attach",
-   "fieldtype": "Attach",
-   "label": "Attach"
-  },
-  {
+   "fetch_from": "link.age",
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "age"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "map"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-02-11 15:14:52.902131",
+ "links": [
+  {
+   "link_doctype": "forcintro",
+   "link_fieldname": "fname"
+  }
+ ],
+ "modified": "2025-02-11 18:44:26.798720",
  "modified_by": "Administrator",
  "module": "Librify",
- "name": "New Doctype",
+ "name": "LinkedDoc",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,31 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-03 11:56:09.972609",
+ "creation": "2025-02-11 15:17:15.898272",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "attach",
-  "age"
+  "age",
+  "fname"
  ],
  "fields": [
-  {
-   "fieldname": "attach",
-   "fieldtype": "Attach",
-   "label": "Attach"
-  },
   {
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "age"
+  },
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "label": "name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-11 15:14:52.902131",
+ "modified": "2025-02-11 15:18:01.904249",
  "modified_by": "Administrator",
  "module": "Librify",
- "name": "New Doctype",
+ "name": "Practice",
  "owner": "Administrator",
  "permissions": [
   {

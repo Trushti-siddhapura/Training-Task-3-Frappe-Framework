@@ -9,3 +9,4 @@ frappe.ui.form.on("Forsetvalue", {
         frm.set_value("fullname",frm.doc.fname+" "+frm.doc.mname+" "+frm.doc.lname)
 	}
 });
+    

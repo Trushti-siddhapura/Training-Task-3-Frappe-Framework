@@ -5,38 +5,33 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "fname",
   "age",
-  "enable",
-  "image"
+  "image",
+  "linked_doc"
  ],
  "fields": [
   {
-   "fieldname": "fname",
-   "fieldtype": "Data",
-   "label": "name"
-  },
-  {
+   "fetch_from": "linked_doc.age",
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "age"
   },
   {
-   "default": "0",
-   "fieldname": "enable",
-   "fieldtype": "Check",
-   "label": "enable"
-  },
-  {
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "linked_doc",
+   "fieldtype": "Link",
+   "label": "link",
+   "options": "LinkedDoc"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-10 15:13:52.780059",
+ "modified": "2025-02-11 14:44:57.850213",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "forcintro",
