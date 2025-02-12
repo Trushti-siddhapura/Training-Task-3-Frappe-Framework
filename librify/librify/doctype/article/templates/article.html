@@ -1,34 +1,34 @@
-{% extends "templates/web.html" %}
+    {% extends "templates/web.html" %}
 
-{% block page_content %}
-<div class="container my-10">
-    <div class="row">
-        <div class="col-lg-3 col-sm-12 col-md-6 col-12">
-            <img src="{{ image }}" width="300" height="100">
-        </div>
-        <div class="col-9">
-            <h3>{{ title }}</h3>
-            <p>By {{ author }}</p>
-            {%-
-            if status=="Available"-%}
-            Available
-            {%- elif status=="Issued"-%}
-            Issued
-            {%- endif -%}
+    {% block page_content %}
+    <div class="container my-10">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-6 col-12">
+                <img src="{{ image }}" width="300" height="100">
+            </div>
+            <div class="col-9">
+                <h3>{{ title }}</h3>
+                <p>By {{ author }}</p>
+                {%-
+                if status=="Available"-%}
+                Available
+                {%- elif status=="Issued"-%}
+                Issued
+                {%- endif -%}
+                <p>
+                Publisher:{{publisher}}<br>
+                ISBN:{{isbn}}
+            </p>
             <p>
-            Publisher:{{publisher}}<br>
-            ISBN:{{isbn}}
-        </p>
-        <p>
-            {{description}}
-        </p>
+                {{description}}
+            </p>
+            </div>
         </div>
     </div>
-</div>
-</div>
-{% for doc in Articles %}
-{% include "templates/includes/articles_row.html" %}
-{% endfor %}
-{% endblock %}
+    </div>
+    <!-- {% for doc in Articles %}
+    {% include "templates/includes/articles_row.html" %}
+    {% endfor %} -->
+    {% endblock %}
 
-<!-- this is a sample default web page template -->
+    this is a sample default web page template

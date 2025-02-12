@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DA-{MM}-{YYYY}-{####}",
+ "creation": "2025-02-12 11:45:27.967243",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "access",
+  "timeperoid",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "access",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Access",
+   "options": "Demo Doctype"
+  },
+  {
+   "default": "1-day",
+   "fieldname": "timeperoid",
+   "fieldtype": "Select",
+   "label": "Timeperoid",
+   "options": "1-day\n1-week\n1-month"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Demo Request Approval",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-12 12:03:06.583817",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Demo Request Approval",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

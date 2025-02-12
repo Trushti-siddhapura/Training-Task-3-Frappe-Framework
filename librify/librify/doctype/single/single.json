@@ -5,15 +5,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "data",
-  "color"
+  "color",
+  "first_name",
+  "last_name"
  ],
  "fields": [
-  {
-   "fieldname": "data",
-   "fieldtype": "Text",
-   "label": "data"
-  },
   {
    "fieldname": "color",
    "fieldtype": "Select",
@@ -21,6 +17,16 @@
    "label": "select The color",
    "options": "Option 1\nOption 2\nOption 3",
    "sort_options": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last_name"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -30,7 +36,7 @@
    "link_fieldname": "data"
   }
  ],
- "modified": "2025-02-10 15:26:53.749761",
+ "modified": "2025-02-12 14:54:34.559267",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "single",

@@ -15,3 +15,4 @@ class forgetdocserverside(Document):
 		frappe.msgprint(_("Thi is my value1:{0} This is my value2:{1}").format(doc.label,doc.age))
 
 
+

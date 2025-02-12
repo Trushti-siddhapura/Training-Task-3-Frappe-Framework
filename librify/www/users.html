@@ -1,0 +1,13 @@
+<h1>Books</h1>
+{% for row in child_table_data %}
+    <p>Data: {{ row.data }}</p>
+    <p>Hobby: {{ row.hobby }}</p>
+{% endfor %}
+
+<ul>
+    {% for book in doc %}
+        <li>
+            <strong>{{ book.first_name }}</strong> last_name: {{ book.last_name }}
+        </li>
+    {% endfor %}
+</ul>
