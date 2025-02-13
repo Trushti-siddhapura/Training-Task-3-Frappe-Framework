@@ -1,34 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "Prompt",
+ "autoname": "PR-.#####",
  "creation": "2025-02-10 15:48:40.738160",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "fname",
   "sname",
-  "colors",
   "age"
  ],
  "fields": [
   {
    "fieldname": "fname",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "First_name"
   },
   {
    "fieldname": "sname",
    "fieldtype": "Data",
    "label": "Second_name"
-  },
-  {
-   "fieldname": "colors",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "colors",
-   "options": "Green\nBlue\nWhite\nRed\nYellow"
   },
   {
    "fieldname": "age",
@@ -38,11 +29,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-10 17:13:56.956742",
+ "modified": "2025-02-13 18:15:23.459507",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "Person",
- "naming_rule": "Set by user",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

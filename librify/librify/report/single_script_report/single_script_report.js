@@ -3,15 +3,22 @@
 
 frappe.query_reports["single Script Report"] = {
 	"filters": [
-		{
-			"fieldname": "last_name",
-			"fieldtype": "data",
-			"label": "last name"
-		   },
-		   {
-			"fieldname": "first_name",
-			"fieldtype": "Data",
-			"label": "first name"
-		   }
-	]
+			{
+				"fieldname":"fname",
+				"label":__("First_name"),
+				"fieldtype":"Link",
+				"options":"Person"
+			},
+			{
+				"fieldname":"sname",
+				"label":__("Second_name"),
+				"fieldtype":"Data",
+				
+			},
+			{
+				"fieldname":"age",
+				"label":__("Age"),
+				"fieldtype":"Int",
+			}
+	]	
 };
