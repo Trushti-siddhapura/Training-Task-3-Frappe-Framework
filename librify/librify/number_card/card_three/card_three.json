@@ -1,0 +1,21 @@
+{
+ "creation": "2025-02-14 12:57:38.166215",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "null",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Card Three Using Custom",
+ "method": "librify.librify.doctype.demo_doctype.demo_doctype.get_salary",
+ "modified": "2025-02-14 15:25:42.124033",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Card Three",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}

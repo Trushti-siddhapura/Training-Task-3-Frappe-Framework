@@ -17,8 +17,13 @@ frappe.query_reports["single Script Report"] = {
 			},
 			{
 				"fieldname":"age",
-				"label":__("Age"),
+				"label":__("Age"),		
 				"fieldtype":"Int",
+			},
+			{
+				"fieldname":"gender",
+				"label":__("Gender"),
+				"fieldtype":"Data"
 			}
 	]	
 };

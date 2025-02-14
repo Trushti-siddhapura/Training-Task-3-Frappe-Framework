@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "data",
+  "salary",
   "first_name",
   "last_name",
   "textdata",
@@ -73,6 +74,11 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "last_name"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Int",
+   "label": "salary"
   }
  ],
  "image_field": "image",
@@ -87,7 +93,7 @@
    "link_fieldname": "data"
   }
  ],
- "modified": "2025-02-12 16:17:17.095067",
+ "modified": "2025-02-14 12:52:16.091278",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "Demo Doctype",

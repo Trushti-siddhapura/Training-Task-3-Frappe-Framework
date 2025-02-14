@@ -1,0 +1,51 @@
+{
+ "cards": [
+  {
+   "card": "First Card"
+  },
+  {
+   "card": "Card Two"
+  },
+  {
+   "card": "Card Three"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Line chart",
+   "width": "Full"
+  },
+  {
+   "chart": "Bar chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Percentage",
+   "width": "Half"
+  },
+  {
+   "chart": "Pie",
+   "width": "Half"
+  },
+  {
+   "chart": "Donut chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Heatmap Chart",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-02-14 12:24:48.116248",
+ "dashboard_name": "Server-Side Scripting Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-02-14 16:11:25.958921",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Server-Side Scripting Dashboard",
+ "owner": "Administrator"
+}

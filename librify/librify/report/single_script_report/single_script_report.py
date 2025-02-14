@@ -96,20 +96,13 @@ def get_chart_data(data):
 			"labels":labels,
 			"datasets":datasets
 		},
-		"type":"pie",
+		"type":"percentage",
 		"height":300,
 	}
 	return chart
 
-	chart = {
-		"data":{
-			"labels":labels,
-			"datasets":datasets
-		},
-		"type":"Line",
-		"height":300,
-	}
-	return chart
+
+
 
 ####################Report Summery###########################
 def get_report_summary(data):

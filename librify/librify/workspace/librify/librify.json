@@ -1,0 +1,89 @@
+{
+ "charts": [
+  {
+   "chart_name": "Percentage",
+   "label": "This is Percentage Chart"
+  }
+ ],
+ "content": "[{\"id\":\"XzMQBc1Yo2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Librify</span>\",\"col\":12}},{\"id\":\"r1woKe9VtN\",\"type\":\"card\",\"data\":{\"card_name\":\"This is Number cards\",\"col\":5}},{\"id\":\"MZ8NcN9osS\",\"type\":\"card\",\"data\":{\"card_name\":\"This is custom cards\",\"col\":5}},{\"id\":\"K5pMqg73aa\",\"type\":\"chart\",\"data\":{\"chart_name\":\"This is Percentage Chart\",\"col\":12}},{\"id\":\"64NIlSUwGA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"LJVzSVbZXn\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"This is Demo Doc List Data\",\"col\":6}},{\"id\":\"prTW5oURl2\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"This is For Doc Intro\",\"col\":6}},{\"id\":\"6FOPXm4CfK\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"This is My Custom block\",\"col\":12}}]",
+ "creation": "2025-02-14 16:51:56.954799",
+ "custom_blocks": [
+  {
+   "custom_block_name": "This is My Custom block",
+   "label": "This is My Custom block"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Librify",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "This is Number cards",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "This is Doctype",
+   "link_count": 0,
+   "link_to": "Demo Doctype",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "This is custom cards",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "This is From Person table",
+   "link_count": 0,
+   "link_to": "single Script Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Person",
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-14 17:43:16.604527",
+ "modified_by": "Administrator",
+ "module": "Librify",
+ "name": "Librify",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Build",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Demo Doctype",
+   "label": "This is Demo Doc List Data",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "forcintro",
+   "label": "This is For Doc Intro",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [],
+ "title": "Librify"
+}
