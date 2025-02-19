@@ -4,6 +4,15 @@ app_publisher = "admin"
 app_description = "Here all Kind of Books are stored here and for sell also"
 app_email = "admin@gmail.com"
 app_license = "mit"
+api_path = "librify.api.data"  # Update this path
+
+api_methods = [
+    "librify.api.data.get_person"
+]
+app_include_js = "/assets/librify/js/custom_page.js"
+
+
+
 #comment
 # Apps
 # ------------------

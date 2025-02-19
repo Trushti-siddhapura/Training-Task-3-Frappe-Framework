@@ -9,7 +9,8 @@
   "fname",
   "sname",
   "age",
-  "gender"
+  "gender",
+  "date"
  ],
  "fields": [
   {
@@ -32,11 +33,16 @@
    "fieldtype": "Select",
    "label": "gender",
    "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-14 10:41:24.616475",
+ "modified": "2025-02-19 12:13:03.420502",
  "modified_by": "Administrator",
  "module": "Librify",
  "name": "Person",

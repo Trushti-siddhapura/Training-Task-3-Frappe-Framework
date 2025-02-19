@@ -1,9 +1,13 @@
-# Copyright (c) 2025, admin and contributors
-# For license information, please see license.txt
-
+# Python file (documnet_api.py)
 import frappe
 from frappe.model.document import Document
 
+class DocumnetAPI(Document):  # Match the DocType name spelling
+    pass
 
-class DocumnetAPI(Document):
-	pass
+@frappe.whitelist()
+def get_name():
+        doc = frappe.get_doc("Person", "PR-00006")
+        frappe.db.commit()
+        doc2 = doc.delete("Person")
+        return {'fname':doc.fname},doc2
