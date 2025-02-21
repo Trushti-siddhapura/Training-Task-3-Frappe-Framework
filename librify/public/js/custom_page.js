@@ -1,10 +1,10 @@
-frapper.pages["custom_page"].on_page_load = function(wrapper){
-    let page = frapper.ui.make_app_page({
+frappe.pages["custom_page"].on_page_load = function(wrapper){
+    let page = frappe.ui.make_app_page({
         parent :wrapper,
         title : "Custom Page",
         single_column:true
     });
-    let dialog = new frapper.ui.Dialog({
+    let dialog = new frappe.ui.Dialog({
         title:"Add new Person",
         fields:[
             {
@@ -26,10 +26,10 @@ frapper.pages["custom_page"].on_page_load = function(wrapper){
         ],
         primary_action_label:"Submit",
         primary_action(values){
-            frapper.call({
+            frappe.call({
                 method:"librify.librify.doctype.person.person.Add_person",
                 args:{
-                    doc:{
+                       doc:{
                         doctype:"Person",
                         fname:values.fname,
                         sname:values.sname,
@@ -38,11 +38,11 @@ frapper.pages["custom_page"].on_page_load = function(wrapper){
                 },
                 callback:function(response){
                     if(response.message){
-                        frapper.msgprint("Person added successfully!");
+                        frappe.msgprint("Person added successfully!");
                         dialog.hide();
                     }
                     else{
-                        frapper.msgprint("failed to add person")
+                        frappe.msgprint("failed to add person")
                     }
                 } 
             });

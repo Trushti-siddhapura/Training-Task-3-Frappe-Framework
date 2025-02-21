@@ -14,7 +14,7 @@ def Add_person(fname,sname,age):
         "sname":sname,
         "age":age
     })
-    Person.insert()
+    doc.insert()
     frappe.db.commit()
     return {"message":"Person Added Successfully"}
-
+    

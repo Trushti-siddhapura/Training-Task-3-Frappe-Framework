@@ -9,7 +9,8 @@ api_path = "librify.api.data"  # Update this path
 api_methods = [
     "librify.api.data.get_person"
 ]
-app_include_js = "/assets/librify/js/custom_page.js"
+app_include_js = "/assets/librify/public/js/custom_page.js"
+
 
 
 
