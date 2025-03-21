@@ -12,7 +12,11 @@ api_methods = [
 app_include_js = ["/assets/librify/js/dialog.js"]
 page_js={"dialog":"public/js/dialog.js"}
 
-
+webhooks ={
+    "Person":{
+        "after_insert":"librify.librify.webhook-request.handlor.process_webhook"
+    }
+}
 
 
 #comment
