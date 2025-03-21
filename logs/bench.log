@@ -453,3 +453,5 @@
 2025-03-21 11:06:46,086 INFO /usr/local/bin/bench watch
 2025-03-21 11:07:30,873 INFO /usr/local/bin/bench migrate
 2025-03-21 11:14:16,993 INFO /usr/local/bin/bench export-fixtures
+2025-03-21 11:24:55,859 INFO /usr/local/bin/bench export-fixtures
+2025-03-21 11:32:12,295 INFO /usr/local/bin/bench export-fixtures
