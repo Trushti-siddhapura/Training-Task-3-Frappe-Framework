@@ -1,0 +1,7 @@
+{
+ "db_name": "_4f7cad3af7564516",
+ "db_password": "uF2wqRrAcnt6zej6",
+ "db_type": "mariadb",
+ "encryption_key": "86GxuB2PMApXqpjKIVef-rZcTE0ge70O0hMHwRiyqsw=",
+ "nginx_port": 8080
+}

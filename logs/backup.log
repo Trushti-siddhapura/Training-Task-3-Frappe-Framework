@@ -1,0 +1,180 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250226_120002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-26 12:00:04.022720
+Config  : ./dev1/private/backups/20250226_120002-dev1-site_config_backup.json 94.0B
+Database: ./dev1/private/backups/20250226_120002-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250226_180001-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-26 18:00:03.928680
+Config  : ./dev1/private/backups/20250226_180001-dev1-site_config_backup.json 94.0B
+Database: ./dev1/private/backups/20250226_180001-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250227_120002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-27 12:00:05.574597
+Config  : ./dev1/private/backups/20250227_120002-dev1-site_config_backup.json 161.0B
+Database: ./dev1/private/backups/20250227_120002-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250227_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-27 18:00:05.703945
+Config  : ./dev1/private/backups/20250227_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250227_180002-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250228_120001-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-28 12:00:04.707559
+Config  : ./dev1/private/backups/20250228_120001-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250228_120001-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250228_180001-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-02-28 18:00:03.746197
+Config  : ./dev1/private/backups/20250228_180001-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250228_180001-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250303_120002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-03 12:00:04.291437
+Config  : ./dev1/private/backups/20250303_120002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250303_120002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250303_180003-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-03 18:00:08.912982
+Config  : ./dev1/private/backups/20250303_180003-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250303_180003-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250304_120002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-04 12:00:07.890312
+Config  : ./dev1/private/backups/20250304_120002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250304_120002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250304_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-04 18:00:05.560905
+Config  : ./dev1/private/backups/20250304_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250304_180002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250305_120004-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-05 12:00:15.731439
+Config  : ./dev1/private/backups/20250305_120004-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250305_120004-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250305_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-05 18:00:06.401880
+Config  : ./dev1/private/backups/20250305_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250305_180002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250306_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-06 12:00:16.394123
+Config  : ./dev1/private/backups/20250306_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250306_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250306_180003-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-06 18:00:07.094685
+Config  : ./dev1/private/backups/20250306_180003-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250306_180003-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250307_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-07 12:00:15.444958
+Config  : ./dev1/private/backups/20250307_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250307_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250307_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-07 18:00:06.562926
+Config  : ./dev1/private/backups/20250307_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250307_180002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250310_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-10 12:00:17.222130
+Config  : ./dev1/private/backups/20250310_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250310_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250310_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-10 18:00:05.967781
+Config  : ./dev1/private/backups/20250310_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250310_180002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250311_120006-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-11 12:00:15.793050
+Config  : ./dev1/private/backups/20250311_120006-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250311_120006-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250311_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-11 18:00:05.819860
+Config  : ./dev1/private/backups/20250311_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250311_180002-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250312_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-12 12:00:20.470081
+Config  : ./dev1/private/backups/20250312_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250312_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250312_180003-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-12 18:00:10.632730
+Config  : ./dev1/private/backups/20250312_180003-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250312_180003-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250313_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-13 12:00:15.408281
+Config  : ./dev1/private/backups/20250313_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250313_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250317_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-17 12:00:18.452952
+Config  : ./dev1/private/backups/20250317_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250317_120005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250317_180005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-17 18:00:14.916962
+Config  : ./dev1/private/backups/20250317_180005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250317_180005-dev1-database.sql.gz         1.2MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250318_120001-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-18 12:00:03.326562
+Config  : ./dev1/private/backups/20250318_120001-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250318_120001-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250318_180002-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-18 18:00:06.988727
+Config  : ./dev1/private/backups/20250318_180002-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250318_180002-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250319_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-19 12:00:17.552056
+Config  : ./dev1/private/backups/20250319_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250319_120005-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250319_180001-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-19 18:00:05.713777
+Config  : ./dev1/private/backups/20250319_180001-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250319_180001-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_4f7cad3af7564516 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _4f7cad3af7564516 | /usr/bin/gzip >> ./dev1/private/backups/20250320_120005-dev1-database.sql.gz
+
+Backup Summary for dev1 at 2025-03-20 12:00:17.544106
+Config  : ./dev1/private/backups/20250320_120005-dev1-site_config_backup.json 182.0B
+Database: ./dev1/private/backups/20250320_120005-dev1-database.sql.gz         1.1MiB
+Backup for Site dev1 has been successfully completed

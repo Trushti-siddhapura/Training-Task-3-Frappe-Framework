@@ -1,0 +1,455 @@
+2025-02-26 10:52:36,180 DEBUG cd dev && python3.11 -m venv env
+2025-02-26 10:52:38,934 DEBUG cd dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-26 10:52:40,621 DEBUG cd dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet wheel
+2025-02-26 10:52:42,330 LOG Getting frappe
+2025-02-26 10:52:42,330 DEBUG cd dev/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-02-26 10:52:46,133 LOG Installing frappe
+2025-02-26 10:52:46,133 DEBUG cd /home/sanskaar/Devlop/dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade -e /home/sanskaar/Devlop/dev/apps/frappe 
+2025-02-26 10:53:18,608 DEBUG cd /home/sanskaar/Devlop/dev/apps/frappe && yarn install --check-files
+2025-02-26 10:53:26,150 DEBUG cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe:
+2025-02-26 10:53:26,322 WARNING cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe: executed with exit code 7
+2025-02-26 10:53:26,323 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-26 10:53:26,323 DEBUG cd dev && bench build
+2025-02-26 10:53:26,432 INFO /usr/local/bin/bench build
+2025-02-26 10:53:42,783 LOG setting up backups
+2025-02-26 10:53:42,798 LOG backups were set up
+2025-02-26 10:53:42,798 INFO Bench dev initialized
+2025-02-26 10:54:07,093 INFO /usr/local/bin/bench new-site dev1
+2025-02-26 10:55:00,379 INFO /usr/local/bin/bench use dev1
+2025-02-26 10:55:16,986 INFO /usr/local/bin/bench get-app https://github.com/frappe/erpnext --branch version-15
+2025-02-26 10:55:16,993 LOG Getting erpnext
+2025-02-26 10:55:16,993 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-15 --depth 1 --origin upstream
+2025-02-26 10:55:21,416 LOG Installing erpnext
+2025-02-26 10:55:21,416 DEBUG cd /home/sanskaar/Devlop/dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade -e /home/sanskaar/Devlop/dev/apps/erpnext 
+2025-02-26 10:55:26,328 DEBUG cd /home/sanskaar/Devlop/dev/apps/erpnext && yarn install --check-files
+2025-02-26 10:55:26,682 DEBUG bench build --app erpnext
+2025-02-26 10:55:26,790 INFO /usr/local/bin/bench build --app erpnext
+2025-02-26 10:55:29,297 DEBUG cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe:
+2025-02-26 10:55:29,469 WARNING cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe: executed with exit code 7
+2025-02-26 10:55:29,469 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-26 10:55:38,749 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2025-02-26 10:55:46,637 INFO /usr/local/bin/bench --site dev1 install-app erpnext
+2025-02-26 10:57:58,751 INFO /usr/local/bin/bench start
+2025-02-26 10:59:06,489 INFO /usr/local/bin/bench setup requiremnets
+2025-02-26 10:59:06,494 WARNING /usr/local/bin/bench setup requiremnets executed with exit code 2
+2025-02-26 10:59:13,425 INFO /usr/local/bin/bench setup requirements
+2025-02-26 10:59:13,430 DEBUG /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-26 10:59:14,262 LOG Installing frappe
+2025-02-26 10:59:14,262 DEBUG cd /home/sanskaar/Devlop/dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade -e /home/sanskaar/Devlop/dev/apps/frappe 
+2025-02-26 10:59:16,511 DEBUG cd /home/sanskaar/Devlop/dev/apps/frappe && yarn install --check-files
+2025-02-26 10:59:17,698 LOG Installing erpnext
+2025-02-26 10:59:17,699 DEBUG cd /home/sanskaar/Devlop/dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade -e /home/sanskaar/Devlop/dev/apps/erpnext 
+2025-02-26 10:59:19,618 DEBUG cd /home/sanskaar/Devlop/dev/apps/erpnext && yarn install --check-files
+2025-02-26 10:59:47,898 INFO /usr/local/bin/bench migarte
+2025-02-26 11:00:02,238 INFO /usr/local/bin/bench migrate
+2025-02-26 11:00:17,444 INFO /usr/local/bin/bench bhuild
+2025-02-26 11:00:22,570 INFO /usr/local/bin/bench build
+2025-02-26 11:01:47,969 INFO /usr/local/bin/bench use dev1
+2025-02-26 11:01:51,164 INFO /usr/local/bin/bench start
+2025-02-26 11:03:56,476 INFO /usr/local/bin/bench start
+2025-02-26 11:03:56,692 INFO /usr/local/bin/bench watch
+2025-02-26 11:03:56,701 INFO /usr/local/bin/bench schedule
+2025-02-26 11:03:56,714 INFO /usr/local/bin/bench worker
+2025-02-26 11:03:56,755 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 11:05:56,002 INFO /usr/local/bin/bench start
+2025-02-26 11:05:56,242 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 11:05:56,245 INFO /usr/local/bin/bench schedule
+2025-02-26 11:05:56,283 INFO /usr/local/bin/bench watch
+2025-02-26 11:05:56,294 INFO /usr/local/bin/bench worker
+2025-02-26 11:06:45,110 INFO /usr/local/bin/bench get-app https://github.com/Trushti-siddhapura/Training-Task-3-Frappe-Framework.git
+2025-02-26 11:06:45,117 LOG Getting Training-Task-3-Frappe-Framework
+2025-02-26 11:06:45,117 DEBUG cd ./apps && git clone https://github.com/Trushti-siddhapura/Training-Task-3-Frappe-Framework.git  --depth 1 --origin upstream
+2025-02-26 11:06:45,979 LOG Installing librify
+2025-02-26 11:06:45,979 DEBUG cd /home/sanskaar/Devlop/dev && /home/sanskaar/Devlop/dev/env/bin/python -m pip install --quiet --upgrade -e /home/sanskaar/Devlop/dev/apps/librify 
+2025-02-26 11:06:48,014 DEBUG bench build --app librify
+2025-02-26 11:06:48,140 INFO /usr/local/bin/bench build --app librify
+2025-02-26 11:06:50,006 DEBUG cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe:
+2025-02-26 11:06:50,220 WARNING cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe: executed with exit code 7
+2025-02-26 11:06:50,220 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-26 11:07:03,748 INFO /usr/local/bin/bench --site dev1 install-app erpnext
+2025-02-26 11:07:17,800 INFO /usr/local/bin/bench --site dev1 install-app librify
+2025-02-26 11:07:28,019 INFO /usr/local/bin/bench start
+2025-02-26 11:07:28,247 INFO /usr/local/bin/bench watch
+2025-02-26 11:07:28,268 INFO /usr/local/bin/bench worker
+2025-02-26 11:07:28,271 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 11:07:28,288 INFO /usr/local/bin/bench schedule
+2025-02-26 11:09:33,805 INFO /usr/local/bin/bench start
+2025-02-26 11:09:34,039 INFO /usr/local/bin/bench watch
+2025-02-26 11:09:34,054 INFO /usr/local/bin/bench schedule
+2025-02-26 11:09:34,071 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 11:09:34,075 INFO /usr/local/bin/bench worker
+2025-02-26 11:11:26,053 INFO /usr/local/bin/bench --version
+2025-02-26 11:11:31,103 INFO /usr/local/bin/bench list-apps
+2025-02-26 11:11:49,489 INFO /usr/local/bin/bench use dev1
+2025-02-26 11:11:55,449 INFO /usr/local/bin/bench list-apps
+2025-02-26 11:24:38,861 INFO /usr/local/bin/bench new-page librify dialog
+2025-02-26 11:24:54,392 INFO /usr/local/bin/bench use dev1
+2025-02-26 11:25:10,128 INFO /usr/local/bin/bench new-page librify dialog
+2025-02-26 11:37:21,466 INFO /usr/local/bin/bench start
+2025-02-26 11:37:21,703 INFO /usr/local/bin/bench worker
+2025-02-26 11:37:21,705 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 11:37:21,720 INFO /usr/local/bin/bench watch
+2025-02-26 11:37:21,762 INFO /usr/local/bin/bench schedule
+2025-02-26 11:38:14,970 INFO /usr/local/bin/bench --site dev1 console
+2025-02-26 11:43:43,893 INFO /usr/local/bin/bench console
+2025-02-26 11:45:41,527 INFO /usr/local/bin/bench console
+2025-02-26 12:00:01,854 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-26 12:02:16,912 INFO /usr/local/bin/bench start
+2025-02-26 12:02:17,159 INFO /usr/local/bin/bench schedule
+2025-02-26 12:02:17,179 INFO /usr/local/bin/bench worker
+2025-02-26 12:02:17,187 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:02:17,199 INFO /usr/local/bin/bench watch
+2025-02-26 12:13:22,940 INFO /usr/local/bin/bench --site dev1 console
+2025-02-26 12:18:50,383 INFO /usr/local/bin/bench --site show-config
+2025-02-26 12:20:33,651 INFO /usr/local/bin/bench set-config developer_mode 1 --global
+2025-02-26 12:20:43,185 INFO /usr/local/bin/bench start
+2025-02-26 12:21:05,234 INFO /usr/local/bin/bench start
+2025-02-26 12:21:05,476 INFO /usr/local/bin/bench watch
+2025-02-26 12:21:05,479 INFO /usr/local/bin/bench worker
+2025-02-26 12:21:05,506 INFO /usr/local/bin/bench schedule
+2025-02-26 12:21:05,558 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:24:32,653 INFO /usr/local/bin/bench start
+2025-02-26 12:24:32,889 INFO /usr/local/bin/bench watch
+2025-02-26 12:24:32,904 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:24:32,962 INFO /usr/local/bin/bench schedule
+2025-02-26 12:24:32,985 INFO /usr/local/bin/bench worker
+2025-02-26 12:36:35,537 INFO /usr/local/bin/bench migrate
+2025-02-26 12:36:51,780 INFO /usr/local/bin/bench start
+2025-02-26 12:36:52,083 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:36:52,102 INFO /usr/local/bin/bench schedule
+2025-02-26 12:36:52,130 INFO /usr/local/bin/bench watch
+2025-02-26 12:36:52,166 INFO /usr/local/bin/bench worker
+2025-02-26 12:46:38,818 INFO /usr/local/bin/bench --site Dev1 clear-cache
+2025-02-26 12:46:44,660 INFO /usr/local/bin/bench --site dev1 clear-cache
+2025-02-26 12:46:58,624 INFO /usr/local/bin/bench --site dev1 clear-website-cache
+2025-02-26 12:47:08,929 INFO /usr/local/bin/bench migrate
+2025-02-26 12:48:06,270 INFO /usr/local/bin/bench set-config -g developer_mode 1
+2025-02-26 12:53:48,532 INFO /usr/local/bin/bench migrate
+2025-02-26 12:53:58,672 INFO /usr/local/bin/bench start
+2025-02-26 12:54:17,162 INFO /usr/local/bin/bench start
+2025-02-26 12:54:17,419 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:54:17,432 INFO /usr/local/bin/bench watch
+2025-02-26 12:54:17,449 INFO /usr/local/bin/bench worker
+2025-02-26 12:54:17,479 INFO /usr/local/bin/bench schedule
+2025-02-26 12:58:44,490 INFO /usr/local/bin/bench build
+2025-02-26 12:59:07,769 INFO /usr/local/bin/bench start
+2025-02-26 12:59:08,039 INFO /usr/local/bin/bench schedule
+2025-02-26 12:59:08,044 INFO /usr/local/bin/bench worker
+2025-02-26 12:59:08,048 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 12:59:08,063 INFO /usr/local/bin/bench watch
+2025-02-26 12:59:32,388 INFO /usr/local/bin/bench --site clear -cache
+2025-02-26 12:59:57,280 INFO /usr/local/bin/bench build
+2025-02-26 13:00:18,353 INFO /usr/local/bin/bench clear-cache
+2025-02-26 14:36:06,474 INFO /usr/local/bin/bench start
+2025-02-26 14:36:06,755 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 14:36:06,766 INFO /usr/local/bin/bench worker
+2025-02-26 14:36:06,773 INFO /usr/local/bin/bench schedule
+2025-02-26 14:36:06,777 INFO /usr/local/bin/bench watch
+2025-02-26 14:44:21,372 INFO /usr/local/bin/bench start
+2025-02-26 14:44:41,746 INFO /usr/local/bin/bench start
+2025-02-26 14:44:41,988 INFO /usr/local/bin/bench watch
+2025-02-26 14:44:41,989 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 14:44:41,991 INFO /usr/local/bin/bench worker
+2025-02-26 14:44:42,021 INFO /usr/local/bin/bench schedule
+2025-02-26 14:45:38,681 INFO /usr/local/bin/bench start
+2025-02-26 14:45:38,897 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 14:45:38,914 INFO /usr/local/bin/bench watch
+2025-02-26 14:45:39,017 INFO /usr/local/bin/bench schedule
+2025-02-26 14:45:39,045 INFO /usr/local/bin/bench worker
+2025-02-26 14:49:21,261 INFO /usr/local/bin/bench start
+2025-02-26 14:49:21,519 INFO /usr/local/bin/bench watch
+2025-02-26 14:49:21,535 INFO /usr/local/bin/bench worker
+2025-02-26 14:49:21,537 INFO /usr/local/bin/bench schedule
+2025-02-26 14:49:21,589 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 14:57:58,234 INFO /usr/local/bin/bench clear -cahche
+2025-02-26 14:58:04,287 INFO /usr/local/bin/bench clear -cache
+2025-02-26 14:58:12,602 INFO /usr/local/bin/bench bhuild
+2025-02-26 14:58:16,970 INFO /usr/local/bin/bench build
+2025-02-26 14:58:41,975 INFO /usr/local/bin/bench restart
+2025-02-26 14:58:42,315 DEBUG cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe:
+2025-02-26 14:58:42,501 WARNING cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe: executed with exit code 7
+2025-02-26 14:58:42,501 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-02-26 14:58:55,044 INFO /usr/local/bin/bench start
+2025-02-26 14:58:55,268 INFO /usr/local/bin/bench worker
+2025-02-26 14:58:55,269 INFO /usr/local/bin/bench schedule
+2025-02-26 14:58:55,280 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 14:58:55,383 INFO /usr/local/bin/bench watch
+2025-02-26 16:19:00,923 INFO /usr/local/bin/bench mariadb
+2025-02-26 16:19:22,583 INFO /usr/local/bin/bench mariadb
+2025-02-26 16:31:26,317 INFO /usr/local/bin/bench mariadb
+2025-02-26 16:32:12,403 INFO /usr/local/bin/bench mariadb
+2025-02-26 16:51:49,128 INFO /usr/local/bin/bench migrate
+2025-02-26 16:52:01,011 INFO /usr/local/bin/bench mariadb
+2025-02-26 16:52:50,476 INFO /usr/local/bin/bench --site dev1 mariadb
+2025-02-26 16:54:46,810 INFO /usr/local/bin/bench clear -cache
+2025-02-26 16:54:56,394 INFO /usr/local/bin/bench migrate
+2025-02-26 16:58:09,554 INFO /usr/local/bin/bench migarte
+2025-02-26 16:58:16,513 INFO /usr/local/bin/bench migrate
+2025-02-26 16:58:33,058 INFO /usr/local/bin/bench build
+2025-02-26 17:00:13,021 INFO /usr/local/bin/bench start
+2025-02-26 17:00:13,265 INFO /usr/local/bin/bench watch
+2025-02-26 17:00:13,280 INFO /usr/local/bin/bench schedule
+2025-02-26 17:00:13,318 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 17:00:13,422 INFO /usr/local/bin/bench worker
+2025-02-26 17:05:47,321 INFO /usr/local/bin/bench --site dev1 mariadb
+2025-02-26 17:10:17,759 INFO /usr/local/bin/bench --site dev1 mariadb
+2025-02-26 17:14:37,851 INFO /usr/local/bin/bench clear -cache
+2025-02-26 17:14:45,629 INFO /usr/local/bin/bench build
+2025-02-26 17:15:53,978 INFO /usr/local/bin/bench migrte
+2025-02-26 17:16:10,843 INFO /usr/local/bin/bench migrate
+2025-02-26 17:16:31,640 INFO /usr/local/bin/bench start
+2025-02-26 17:16:31,888 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 17:16:31,918 INFO /usr/local/bin/bench schedule
+2025-02-26 17:16:32,032 INFO /usr/local/bin/bench watch
+2025-02-26 17:16:32,044 INFO /usr/local/bin/bench worker
+2025-02-26 18:00:01,408 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-26 18:48:32,816 INFO /usr/local/bin/bench start
+2025-02-26 18:48:33,042 INFO /usr/local/bin/bench watch
+2025-02-26 18:48:33,077 INFO /usr/local/bin/bench schedule
+2025-02-26 18:48:33,106 INFO /usr/local/bin/bench serve --port 8000
+2025-02-26 18:48:33,195 INFO /usr/local/bin/bench worker
+2025-02-27 10:14:54,676 INFO /usr/local/bin/bench start
+2025-02-27 10:14:54,923 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 10:14:54,926 INFO /usr/local/bin/bench watch
+2025-02-27 10:14:54,931 INFO /usr/local/bin/bench worker
+2025-02-27 10:14:54,938 INFO /usr/local/bin/bench schedule
+2025-02-27 12:00:01,652 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-27 14:53:56,722 INFO /usr/local/bin/bench start
+2025-02-27 14:54:19,955 INFO /usr/local/bin/bench start
+2025-02-27 14:54:20,195 INFO /usr/local/bin/bench worker
+2025-02-27 14:54:20,205 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 14:54:20,218 INFO /usr/local/bin/bench watch
+2025-02-27 14:54:20,250 INFO /usr/local/bin/bench schedule
+2025-02-27 14:59:38,441 INFO /usr/local/bin/bench start
+2025-02-27 14:59:56,630 INFO /usr/local/bin/bench start
+2025-02-27 14:59:56,882 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 14:59:56,883 INFO /usr/local/bin/bench watch
+2025-02-27 14:59:56,883 INFO /usr/local/bin/bench schedule
+2025-02-27 14:59:56,926 INFO /usr/local/bin/bench worker
+2025-02-27 15:30:14,293 INFO /usr/local/bin/bench start
+2025-02-27 15:30:14,514 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 15:30:14,540 INFO /usr/local/bin/bench watch
+2025-02-27 15:30:14,555 INFO /usr/local/bin/bench worker
+2025-02-27 15:30:14,562 INFO /usr/local/bin/bench schedule
+2025-02-27 16:26:23,001 INFO /usr/local/bin/bench start
+2025-02-27 16:26:39,460 INFO /usr/local/bin/bench start
+2025-02-27 16:26:39,684 INFO /usr/local/bin/bench schedule
+2025-02-27 16:26:39,684 INFO /usr/local/bin/bench watch
+2025-02-27 16:26:39,758 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 16:26:39,761 INFO /usr/local/bin/bench worker
+2025-02-27 16:37:00,777 INFO /usr/local/bin/bench start
+2025-02-27 16:37:36,382 INFO /usr/local/bin/bench start
+2025-02-27 16:37:36,596 INFO /usr/local/bin/bench watch
+2025-02-27 16:37:36,606 INFO /usr/local/bin/bench worker
+2025-02-27 16:37:36,615 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 16:37:36,678 INFO /usr/local/bin/bench schedule
+2025-02-27 16:38:34,662 INFO /usr/local/bin/bench set-nginx-port site1.local 8080
+2025-02-27 16:38:34,669 WARNING /usr/local/bin/bench set-nginx-port site1.local 8080 executed with exit code 1
+2025-02-27 16:38:47,017 INFO /usr/local/bin/bench set-nginx-port dev 8080
+2025-02-27 16:38:47,023 WARNING /usr/local/bin/bench set-nginx-port dev 8080 executed with exit code 1
+2025-02-27 16:38:56,558 INFO /usr/local/bin/bench set-nginx-port dev1 8080
+2025-02-27 16:39:44,400 INFO /usr/local/bin/bench start
+2025-02-27 16:40:00,138 INFO /usr/local/bin/bench start
+2025-02-27 16:40:00,360 INFO /usr/local/bin/bench worker
+2025-02-27 16:40:00,369 INFO /usr/local/bin/bench schedule
+2025-02-27 16:40:00,450 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 16:40:00,475 INFO /usr/local/bin/bench watch
+2025-02-27 16:45:41,715 INFO /usr/local/bin/bench start --bind 0.0.0.0
+2025-02-27 16:45:41,722 WARNING /usr/local/bin/bench start --bind 0.0.0.0 executed with exit code 2
+2025-02-27 16:55:32,521 INFO /usr/local/bin/bench start
+2025-02-27 16:55:49,920 INFO /usr/local/bin/bench start
+2025-02-27 16:55:50,154 INFO /usr/local/bin/bench watch
+2025-02-27 16:55:50,213 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 16:55:50,217 INFO /usr/local/bin/bench schedule
+2025-02-27 16:55:50,236 INFO /usr/local/bin/bench worker
+2025-02-27 18:00:01,283 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-27 18:51:19,526 INFO /usr/local/bin/bench start
+2025-02-27 18:51:19,731 INFO /usr/local/bin/bench serve --port 8000
+2025-02-27 18:51:19,745 INFO /usr/local/bin/bench worker
+2025-02-27 18:51:19,770 INFO /usr/local/bin/bench watch
+2025-02-27 18:51:19,816 INFO /usr/local/bin/bench schedule
+2025-02-28 10:19:15,340 INFO /usr/local/bin/bench start
+2025-02-28 10:19:15,647 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 10:19:15,657 INFO /usr/local/bin/bench schedule
+2025-02-28 10:19:15,661 INFO /usr/local/bin/bench watch
+2025-02-28 10:19:15,665 INFO /usr/local/bin/bench worker
+2025-02-28 10:42:43,623 INFO /usr/local/bin/bench start
+2025-02-28 10:43:01,505 INFO /usr/local/bin/bench start
+2025-02-28 10:43:01,718 INFO /usr/local/bin/bench schedule
+2025-02-28 10:43:01,739 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 10:43:01,755 INFO /usr/local/bin/bench watch
+2025-02-28 10:43:01,761 INFO /usr/local/bin/bench worker
+2025-02-28 11:03:45,698 INFO /usr/local/bin/bench start
+2025-02-28 11:04:02,044 INFO /usr/local/bin/bench start
+2025-02-28 11:04:02,250 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 11:04:02,256 INFO /usr/local/bin/bench schedule
+2025-02-28 11:04:02,292 INFO /usr/local/bin/bench worker
+2025-02-28 11:04:02,317 INFO /usr/local/bin/bench watch
+2025-02-28 11:14:59,178 INFO /usr/local/bin/bench start
+2025-02-28 11:14:59,406 INFO /usr/local/bin/bench watch
+2025-02-28 11:14:59,441 INFO /usr/local/bin/bench schedule
+2025-02-28 11:14:59,477 INFO /usr/local/bin/bench worker
+2025-02-28 11:14:59,491 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 12:00:01,465 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-28 12:07:23,279 INFO /usr/local/bin/bench --site dev1 set-admin-password root
+2025-02-28 12:16:54,053 INFO /usr/local/bin/bench --site dev1 set-admin-password root
+2025-02-28 13:16:00,989 INFO /usr/local/bin/bench start
+2025-02-28 13:16:01,250 INFO /usr/local/bin/bench worker
+2025-02-28 13:16:01,278 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 13:16:01,286 INFO /usr/local/bin/bench schedule
+2025-02-28 13:16:01,293 INFO /usr/local/bin/bench watch
+2025-02-28 14:53:36,937 INFO /usr/local/bin/bench start
+2025-02-28 14:53:37,213 INFO /usr/local/bin/bench schedule
+2025-02-28 14:53:37,280 INFO /usr/local/bin/bench watch
+2025-02-28 14:53:37,310 INFO /usr/local/bin/bench worker
+2025-02-28 14:53:37,343 INFO /usr/local/bin/bench serve --port 8000
+2025-02-28 18:00:01,300 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-03 09:24:28,066 INFO /usr/local/bin/bench start
+2025-03-03 09:24:28,306 INFO /usr/local/bin/bench worker
+2025-03-03 09:24:28,308 INFO /usr/local/bin/bench schedule
+2025-03-03 09:24:28,312 INFO /usr/local/bin/bench watch
+2025-03-03 09:24:28,325 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 11:16:09,528 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 11:17:03,090 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 11:17:28,657 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 11:17:47,943 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 11:20:42,926 INFO /usr/local/bin/bench clear -cache
+2025-03-03 11:21:09,300 INFO /usr/local/bin/bench clear-website-cache
+2025-03-03 11:21:15,814 INFO /usr/local/bin/bench restart
+2025-03-03 11:21:16,078 DEBUG cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe:
+2025-03-03 11:21:16,264 WARNING cd /home/sanskaar/Devlop/dev && supervisorctl restart frappe: executed with exit code 7
+2025-03-03 11:21:16,264 WARNING /usr/local/bin/bench restart executed with exit code 1
+2025-03-03 11:21:30,729 INFO /usr/local/bin/bench start
+2025-03-03 11:21:45,144 INFO /usr/local/bin/bench start
+2025-03-03 11:21:45,379 INFO /usr/local/bin/bench schedule
+2025-03-03 11:21:45,402 INFO /usr/local/bin/bench worker
+2025-03-03 11:21:45,405 INFO /usr/local/bin/bench watch
+2025-03-03 11:21:45,446 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 11:51:55,470 INFO /usr/local/bin/bench --site your-site-name logs
+2025-03-03 11:52:06,629 INFO /usr/local/bin/bench --site your-site-name logs
+2025-03-03 11:52:15,074 INFO /usr/local/bin/bench --site dev1 logs
+2025-03-03 12:00:01,882 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-03 12:07:03,597 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 12:08:18,081 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 12:08:47,599 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 12:09:40,369 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 12:10:08,348 INFO /usr/local/bin/bench --site dev1 console
+2025-03-03 12:39:39,228 INFO /usr/local/bin/bench start
+2025-03-03 12:39:55,964 INFO /usr/local/bin/bench start
+2025-03-03 12:40:02,261 INFO /usr/local/bin/bench start
+2025-03-03 12:40:17,335 INFO /usr/local/bin/bench start
+2025-03-03 12:40:17,563 INFO /usr/local/bin/bench schedule
+2025-03-03 12:40:17,567 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 12:40:17,599 INFO /usr/local/bin/bench watch
+2025-03-03 12:40:17,614 INFO /usr/local/bin/bench worker
+2025-03-03 15:06:09,776 INFO /usr/local/bin/bench start
+2025-03-03 15:06:10,008 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 15:06:10,046 INFO /usr/local/bin/bench worker
+2025-03-03 15:06:10,072 INFO /usr/local/bin/bench schedule
+2025-03-03 15:06:10,072 INFO /usr/local/bin/bench watch
+2025-03-03 15:37:09,570 INFO /usr/local/bin/bench start
+2025-03-03 15:37:09,806 INFO /usr/local/bin/bench schedule
+2025-03-03 15:37:09,828 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 15:37:09,864 INFO /usr/local/bin/bench watch
+2025-03-03 15:37:09,892 INFO /usr/local/bin/bench worker
+2025-03-03 15:51:27,116 INFO /usr/local/bin/bench execute librify.librify.scripts.person.get_persons
+2025-03-03 15:51:30,802 INFO /usr/local/bin/bench execute librify.librify.scripts.person.get_persons
+2025-03-03 15:51:42,312 INFO /usr/local/bin/bench execute librify.scripts.person.get_persons
+2025-03-03 15:52:10,896 INFO /usr/local/bin/bench execute librify.librify.scripts.querybuilder.get_persons
+2025-03-03 15:52:39,066 INFO /usr/local/bin/bench execute querybuilder.get_persons
+2025-03-03 15:52:48,787 INFO /usr/local/bin/bench execute librify.librify.scripts.person.get_persons
+2025-03-03 15:53:24,529 INFO /usr/local/bin/bench execute apps.librify.librify.scripts.querybuilder.get_persons
+2025-03-03 15:53:32,485 INFO /usr/local/bin/bench execute librify.librify.scripts.querybuilder.get_persons
+2025-03-03 16:16:03,915 INFO /usr/local/bin/bench start
+2025-03-03 16:16:21,528 INFO /usr/local/bin/bench start
+2025-03-03 16:16:21,734 INFO /usr/local/bin/bench watch
+2025-03-03 16:16:21,772 INFO /usr/local/bin/bench worker
+2025-03-03 16:16:21,772 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 16:16:21,803 INFO /usr/local/bin/bench schedule
+2025-03-03 18:00:02,197 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-03 18:52:18,913 INFO /usr/local/bin/bench start
+2025-03-03 18:52:42,108 INFO /usr/local/bin/bench start
+2025-03-03 18:52:42,350 INFO /usr/local/bin/bench watch
+2025-03-03 18:52:42,351 INFO /usr/local/bin/bench serve --port 8000
+2025-03-03 18:52:42,390 INFO /usr/local/bin/bench schedule
+2025-03-03 18:52:42,417 INFO /usr/local/bin/bench worker
+2025-03-03 18:53:22,832 INFO /usr/local/bin/bench start
+2025-03-03 18:53:34,655 INFO /usr/local/bin/bench start
+2025-03-03 18:53:34,891 INFO /usr/local/bin/bench worker
+2025-03-03 18:53:34,905 INFO /usr/local/bin/bench schedule
+2025-03-03 18:53:34,908 INFO /usr/local/bin/bench watch
+2025-03-03 18:53:34,918 INFO /usr/local/bin/bench serve --port 8000
+2025-03-04 11:02:43,715 INFO /usr/local/bin/bench start
+2025-03-04 11:02:58,758 INFO /usr/local/bin/bench start
+2025-03-04 11:02:58,994 INFO /usr/local/bin/bench serve --port 8000
+2025-03-04 11:02:58,995 INFO /usr/local/bin/bench worker
+2025-03-04 11:02:59,023 INFO /usr/local/bin/bench schedule
+2025-03-04 11:02:59,044 INFO /usr/local/bin/bench watch
+2025-03-04 11:04:55,003 INFO /usr/local/bin/bench build
+2025-03-04 12:00:02,035 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-04 18:00:01,347 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-05 12:00:01,889 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-05 18:00:02,107 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-06 12:00:01,883 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-06 18:00:02,237 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-07 12:00:01,748 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-07 18:00:01,367 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-10 12:00:01,936 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-10 18:00:01,988 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-11 12:00:02,138 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-11 18:00:01,629 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-12 12:00:02,112 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-12 18:00:01,547 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-13 12:00:01,915 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-17 12:00:01,874 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-17 18:00:01,732 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-18 11:48:10,392 INFO /usr/local/bin/bench start
+2025-03-18 11:48:27,549 INFO /usr/local/bin/bench start
+2025-03-18 11:48:27,759 INFO /usr/local/bin/bench worker
+2025-03-18 11:48:27,762 INFO /usr/local/bin/bench serve --port 8000
+2025-03-18 11:48:27,772 INFO /usr/local/bin/bench watch
+2025-03-18 11:48:27,783 INFO /usr/local/bin/bench schedule
+2025-03-18 11:52:24,125 INFO /usr/local/bin/bench start
+2025-03-18 11:52:24,346 INFO /usr/local/bin/bench watch
+2025-03-18 11:52:24,370 INFO /usr/local/bin/bench worker
+2025-03-18 11:52:24,406 INFO /usr/local/bin/bench serve --port 8000
+2025-03-18 11:52:24,509 INFO /usr/local/bin/bench schedule
+2025-03-18 11:57:28,661 INFO /usr/local/bin/bench start
+2025-03-18 11:57:46,573 INFO /usr/local/bin/bench start
+2025-03-18 11:57:46,804 INFO /usr/local/bin/bench serve --port 8000
+2025-03-18 11:57:46,805 INFO /usr/local/bin/bench schedule
+2025-03-18 11:57:46,814 INFO /usr/local/bin/bench watch
+2025-03-18 11:57:46,923 INFO /usr/local/bin/bench worker
+2025-03-18 12:00:01,464 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-18 18:00:01,662 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-19 12:00:01,550 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-19 18:00:01,402 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-20 12:00:01,980 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-21 10:42:01,634 INFO /usr/local/bin/bench start
+2025-03-21 10:47:40,798 INFO /usr/local/bin/bench start
+2025-03-21 10:48:03,426 INFO /usr/local/bin/bench satrt
+2025-03-21 10:48:14,236 INFO /usr/local/bin/bench start
+2025-03-21 10:48:14,462 INFO /usr/local/bin/bench schedule
+2025-03-21 10:48:14,478 INFO /usr/local/bin/bench watch
+2025-03-21 10:48:14,487 INFO /usr/local/bin/bench worker
+2025-03-21 10:48:14,487 INFO /usr/local/bin/bench serve --port 8000
+2025-03-21 11:00:48,872 INFO /usr/local/bin/bench start
+2025-03-21 11:00:49,108 INFO /usr/local/bin/bench watch
+2025-03-21 11:00:49,117 INFO /usr/local/bin/bench serve --port 8000
+2025-03-21 11:00:49,118 INFO /usr/local/bin/bench schedule
+2025-03-21 11:00:49,178 INFO /usr/local/bin/bench worker
+2025-03-21 11:03:50,088 INFO /usr/local/bin/bench satrt
+2025-03-21 11:03:55,007 INFO /usr/local/bin/bench start
+2025-03-21 11:03:55,235 INFO /usr/local/bin/bench worker
+2025-03-21 11:03:55,272 INFO /usr/local/bin/bench schedule
+2025-03-21 11:03:55,337 INFO /usr/local/bin/bench watch
+2025-03-21 11:03:55,361 INFO /usr/local/bin/bench serve --port 8000
+2025-03-21 11:06:12,042 INFO /usr/local/bin/bench clear-cache
+2025-03-21 11:06:16,725 INFO /usr/local/bin/bench build
+2025-03-21 11:06:45,783 INFO /usr/local/bin/bench start
+2025-03-21 11:06:46,005 INFO /usr/local/bin/bench schedule
+2025-03-21 11:06:46,009 INFO /usr/local/bin/bench serve --port 8000
+2025-03-21 11:06:46,041 INFO /usr/local/bin/bench worker
+2025-03-21 11:06:46,086 INFO /usr/local/bin/bench watch
+2025-03-21 11:07:30,873 INFO /usr/local/bin/bench migrate
+2025-03-21 11:14:16,993 INFO /usr/local/bin/bench export-fixtures
